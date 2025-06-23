@@ -1,0 +1,7 @@
+pyautogui
+numpy
+pandas
+matplotlib
+requests
+openpyxl
+pywin32
