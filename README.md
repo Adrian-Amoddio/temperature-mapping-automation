@@ -1,12 +1,21 @@
 # Temperature Mapping Automation System
 
-This repository contains an automation system developed for pharmaceutical equipment and storage space GMP temperature mapping. The system uses iButton data loggers, GUI automation, data processing, API integration, and Word report generation to streamline reporting.
+Automates the GMP temperature mapping workflow for pharmaceutical equipment and storage space. The tool uses iButton data loggers, GUI automation, data processing, API integration, and Word report generation to streamline reporting. I developed this during my time at Biological Therapies and proposed it to management. It was utilized and reduced hours of manual work down to minutes. The repo excludes private images and sensitive information.
+
+# Results
+
+- Reporting time reduced from 4 hours to under 15 minutes
+- Improved worker satisfaction by reducing repetitive manual work
+- Improved reporting consistency and eliminated the risk of human error
+- Saved the company significant time and money
 
 # Project Summary
 
-This tool automates the temperature mapping process for pharmaceutical equipment and storage areas. It handles data collection, file conversion, statistical analysis, and report formatting. The script integrates with iButton data loggers and T-Tech software to process the data, calculate min/max/mean statistics, generate graphs, and assist with report preparation.
+Pharmaceutical companies that manufacture drug products are legally required to monitor the temperature of storage locations and manufacturing equipment. This is to guarantee that at no stage during manufacture or shipping the temperature of the products exceeded any tolerable limits which can impact drug performance. Each batch requires temperature data to be analysed and documented in a formal report. Previously, this process was manual and extremely time consuming. I proposed and implemented a script-based automation to streamline the process of data acquisition, analysis and reporting which reduced countless hours of work and saved the company significant cost.
 
-# Technologies
+This tool handles data collection, file conversion between .dta to .csv, statistical analysis of the data, and then formatting a report. The script automates the download of data from iButton loggers and integrates with T-Tech software to process the data. It uses Pandas to calculate min/max/mean statistics, matplotlib to generate graphs and visuals of the data, and assists with report preparation.
+
+# Tech Stack
 
 - Python
 - pyautogui
@@ -20,7 +29,7 @@ This tool automates the temperature mapping process for pharmaceutical equipment
 
 # Usage
 
-The tool is modular. The different functions handle:
+The different functions in the tool are used for:
 
 - Starting and stopping iButton data loggers from recording via GUI automation
 - Converting .dta files to .csv files
